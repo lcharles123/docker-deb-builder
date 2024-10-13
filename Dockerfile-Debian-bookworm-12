@@ -11,3 +11,8 @@ RUN set -ex \
                fakeroot \
     && apt-get clean \
     && rm -rf /tmp/* /var/tmp/*
+
+ENV DEBEMAIL="maintainer@ufmg.br"
+ENV DEBFULLNAME="Myname maintainer"
+ENV BASE_DIR="/root"
+
